@@ -65,4 +65,20 @@ REACT_APP_BACKEND_URL=http://localhost:8080
     npm start
     ```
 
+    ### Whisper Server Setup
+
+To enable real-time speech-to-text transcription in Eristis, you need to run a local Whisper server. Follow the steps below to set it up:
+
+1. Clone or download the Whisper server script from this repository or use your own implementation of `whisper_server.py`.
+
+2. Open a terminal, navigate to the folder containing `whisper_server.py`, and run the following command:
+
+   ```bash
+   python3 whisper_server.py
+3. Once the server is running, the url will be available
+
+4. Copy this URL and paste it into the appropriate field in the SpeechToText.tsx file.
+
+5. Make sure the Whisper server is running locally before starting a debate session. If the server is not active, speech transcription features will not work.
+
 The React app should now be running on `http://localhost:3000` and the Express server on `http://localhost:8080`.
